@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectie Afectiuni Medicale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        select {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ced4da;
+            transition: border-color 0.3s ease;
+        }
+        select:hover {
+            border-color: #007bff;
+        }
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Selectează o Afecțiune Medicală</h1>
+    
+    <select id="afectiuneSelect">
+        <option value="">-- Alege o afecțiune --</option>
+        <option value="sistem_cardiovascular.html" style="background-color:#ff9999;">Sistemul cardiovascular</option>
+        <option value="insuficienta_cardiaca.html" style="background-color:#ffcccc;">Insuficiență cardiacă</option>
+        <option value="hipertensiune.html" style="background-color:#ffb3b3;">Hipertensiune arterială</option>
+        <option value="infarct.html" style="background-color:#ff8080;">Infarct miocardic acut</option>
+        <option value="aritmii.html" style="background-color:#ff4d4d;">Aritmii cardiace</option>
+        <option value="boala_periferica.html" style="background-color:#ff1a1a;">Boală arterială periferică</option>
+        
+        <option value="sistem_respirator.html" style="background-color:#99ccff;">Sistemul respirator</option>
+        <option value="pneumonie.html" style="background-color:#66a3ff;">Pneumonie</option>
+        <option value="astm.html" style="background-color:#3399ff;">Astm bronșic</option>
+        <option value="bpc.html" style="background-color:#0073e6;">BPOC</option>
+        <option value="tuberculoza.html" style="background-color:#0047ab;">Tuberculoză pulmonară</option>
+        <option value="edem_pulmonar.html" style="background-color:#001f4d;">Edem pulmonar</option>
+
+        <option value="sistem_digestiv.html" style="background-color:#ffcc99;">Sistemul digestiv</option>
+        <option value="gastrita.html" style="background-color:#ffb366;">Gastrită</option>
+        <option value="ulcer.html" style="background-color:#ff9933;">Ulcer gastro-duodenal</option>
+        <option value="reflux.html" style="background-color:#ff8000;">Boala de reflux gastroesofagian</option>
+        <option value="pancreatita.html" style="background-color:#ff6600;">Pancreatită acută/cronică</option>
+        <option value="hepatita.html" style="background-color:#ff4d00;">Hepatită virală</option>
+
+        <option value="sistem_renal.html" style="background-color:#ccffcc;">Sistemul renal și urinar</option>
+        <option value="insuf_identica.html" style="background-color:#99ff99;">Insuficiență renală acută</option>
+        <option value="insuf_renala_cronica.html" style="background-color:#66ff66;">Insuficiență renală cronică</option>
+        <option value="infectie_urinara.html" style="background-color:#33ff33;">Infecție urinară</option>
+        <option value="glomero.html" style="background-color:#00ff00;">Glomerulonefrită</option>
+        <option value="litiase_renal.html" style="background-color:#00cc00;">Litiază renală</option>
+
+        <option value="sistem_endocrin.html" style="background-color:#ffccff;">Sistemul endocrin</option>
+        <option value="diabet.html" style="background-color:#e699ff;">Diabet zaharat</option>
+        <option value="hipotiroidism.html" style="background-color:#d68cf6;">Hipotiroidism</option>
+        <option value="hipertiroidism.html" style="background-color:#c283f4;">Hipertiroidism</option>
+        <option value="boala_addison.html" style="background-color:#b176d2;">Boala Addison</option>
+        <option value="cushing.html" style="background-color:#a067b0;">Sindromul Cushing</option>
+
+        <option value="sistem_nervos.html" style="background-color:#ccffff;">Sistemul nervos</option>
+        <option value="avc.html" style="background-color:#99ffff;">Accident vascular cerebral (AVC)</option>
+        <option value="epilepsie.html" style="background-color:#66ffff;">Epilepsie</option>
+        <option value="meningita.html" style="background-color:#33ffff;">Meningită</option>
+        <option value="parkinson.html" style="background-color:#00ffff;">Boala Parkinson</option>
+        <option value="scleroza.html" style="background-color:royalblue;">Scleroză multiplă</option>
+
+        <option value="sistem_osteoarticular.html" style="background-color:#ffccff;">Sistemul osteoarticular și muscular</option>
+        <option value="osteoporoza.html" style="background-color:#ff99cc;">Osteoporoză</option>
+        <option value="artrita.html" style="background-color:#ff66cc;">Artrită reumatoidă</option>
+        <option value="fracturi.html" style="background-color:#ff33cc;">Fracturi</option>
+        <option value="lombosciatica.html" style="background-color:#ff00cc;">Lombosciatică</option>
+        <option value="fibromialgie.html" style="background-color:#cc0099;">Fibromialgie</option>
+
+        <option value="sistem_hematologic.html" style="background-color:#ffe6cc;">Sistemul hematologic</option>
+        <option value="anemie.html" style="background-color:#ffd1b3;">Anemie feriprivă</option>
+        <option value="leucemie.html" style="background-color:#ffb36f;">Leucemie</option>
+        <option value="tromboza.html" style="background-color:#ff991f;">Tromboză venoasă profundă</option>
+        <option value="hemofilie.html" style="background-color:#ff8600;">Hemofilie</option>
+        <option value="purpura.html" style="background-color:#ff7f00;">Purpură trombocitopenică</option>
+
+        <option value="sistem_tegumentar.html" style="background-color:#ccccff;">Sistemul tegumentar</option>
+        <option value="arsuri.html" style="background-color:#9999ff;">Arsuri</option>
+        <option value="psoriazis.html" style="background-color:#6666ff;">Psoriazis</option>
+        <option value="dermatita.html" style="background-color:#3333ff;">Dermatită atopică</option>
+        <option value="urticarie.html" style="background-color:#0000ff;">Urticarie</option>
+        <option value="escare.html" style="background-color:#0000cc;">Escare de decubit</option>
+
+        <option value="sistem_reproductiv.html" style="background-color:#ffb3cc;">Sistemul reproducător</option>
+        <option value="endometrioza.html" style="background-color:#ff80b3;">Endometrioză</option>
+        <option value="ovar_polichistic.html" style="background-color:#ff66b3;">Sindromul ovarelor polichistice</option>
+        <option value="prostatita.html" style="background-color:#ff4db3;">Prostatită</option>
+        <option value="bts.html" style="background-color:#ff3399;">Boli cu transmitere sexuală (BTS)</option>
+        <option value="cancer.html" style="background-color:#ff007f;">Cancer de col uterin/prostată</option>
+    </select>
+
+    <button onclick="redirectToPage()">Mergi la informații</button>
+    
+    <div class="footer">
+        <a href="home.html">Înapoi la pagina principală</a>
+    </div>
+</div>
+
+<script>
+    function redirectToPage() {
+        const selectedValue = document.getElementById("afectiuneSelect").value;
+        if (selectedValue) {
+            window.location.href = selectedValue; // Redirect to the selected page
+        } else {
+            alert("Te rog să alegi o afecțiune.");
+        }
+    }
+</script>
+
+</body>
+</html>
