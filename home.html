@@ -38,19 +38,36 @@
             line-height: 1.6;
             color: #555;
         }
-        a {
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .button {
             display: inline-block;
-            margin-top: 20px;
             padding: 10px 20px;
             text-align: center;
-            background-color: #28a745;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        a:hover {
+        .continue-button {
+            background-color: #28a745; /* Green */
+        }
+        .continue-button:hover {
             background-color: #218838;
+        }
+        .care-plan-button {
+            background-color: #dc3545; /* Red */
+        }
+        .care-plan-button:hover {
+            background-color: #c82333;
+        }
+        .diagnostic-button {
+            background-color: #007bff; /* Blue */
+        }
+        .diagnostic-button:hover {
+            background-color: #0056b3;
         }
         footer {
             text-align: center;
@@ -82,27 +99,32 @@
     
     <h2>Despre această pagină</h2>
     <p>
-    Această pagină are ca scop îmbunătățirea înțelegerii afecțiunilor medicale și a planurilor de îngrijire asociate. 
-    Ne dorim să oferim informații utile și accesibile pentru a ajuta pacienții și familiile lor să își înțeleagă mai bine condițiile de sănătate, 
-    opțiunile de tratament și planurile de îngrijire necesare.
-</p>
-<p>
-    Această platformă este dedicată nu doar pacienților, ci și celor care doresc să aprofundeze cunoștințele despre sănătate 
-    și să se pregătească pentru întâlnirile cu medicii, sau pentru a-i ajuta pe ceilalți în procesul de îngrijire.
-</p>
-<p>
-    Aici veți găsi informații diverse, de la explicații despre afecțiuni comune, până la sfaturi utile privind 
-    gestionarea tratamentelor și adoptarea unui stil de viață sănătos.
-</p>
-<p>
-    Această pagină a fost creată de către elevii postlicealei „Vasile Alecsandri”, dedicată viitorilor asistenți medicali generaliști. 
-    Sperăm să fie o resursă valorasă în parcursul dumneavoastră profesional!
-</p>
-    <a href="page2.html">Continuă spre selecția afecțiunilor medicale</a>
+        Această pagină are ca scop îmbunătățirea înțelegerii afecțiunilor medicale și a planurilor de îngrijire asociate. 
+        Ne dorim să oferim informații utile și accesibile pentru a ajuta pacienții și familiile lor să își înțeleagă mai bine condițiile de sănătate, 
+        opțiunile de tratament și planurile de îngrijire necesare.
+    </p>
+    <p>
+        Această platformă este dedicată nu doar pacienților, ci și celor care doresc să aprofundeze cunoștințele despre sănătate 
+        și să se pregătească pentru întâlnirile cu medicii, sau pentru a-i ajuta pe ceilalți în procesul de îngrijire.
+    </p>
+    <p>
+        Aici veți găsi informații diverse, de la explicații despre afecțiuni comune, până la sfaturi utile privind 
+        gestionarea tratamentelor și adoptarea unui stil de viață sănătos.
+    </p>
+    <p>
+        Această pagină a fost creată de către elevii postlicealei „Vasile Alecsandri”, dedicată viitorilor asistenți medicali generaliști. 
+        Sperăm să fie o resursă valorasă în parcursul dumneavoastră profesional!
+    </p>
+    
+    <div class="button-container">
+        
+        <a href="page2.html" class="button care-plan-button">Planuri de Îngrijire</a>
+        <a href="diagnostic_nursing.html" class="button diagnostic-button">Diagnostice Nursing</a>
+    </div>
 </div>
 
 <footer>
-    © 2025 Elevii Anul 2-AMG Vasile Alecsandri Focsani.
+    © 2025 Elevii Anul 2-AMG Vasile Alecsandri Focșani.
 </footer>
 
 </body>
