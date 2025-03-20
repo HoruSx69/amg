@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Îngrijire - Inflamație Cutanată</title>
+    <title>Afecțiuni ale Sistemului Tegumentar</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,38 +15,10 @@
             color: #2c3e50;
             text-align: center;
         }
-        h2 {
-            color: #2980b9;
-        }
-        h3 {
-            color: #c0392b;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd; /* Culoare medicală deschisă */
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb; /* Bordură albastră deschisă */
-        }
-        .interventions {
-            background-color: #d5dbdb;
-            border-radius: 10px;
-            padding: 15px;
+        .button-container {
             margin-bottom: 20px;
-            border: 1px solid #ccc;
-        }
-        .evaluation {
-            background-color: #c8e6c9; /* Verde deschis pentru evaluare */
-            border-radius: 10px;
-            padding: 15px;
-            border: 1px solid #a5d6a7; /* Bordură verde */
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -54,57 +26,45 @@
             cursor: pointer;
             font-size: 16px;
             display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px auto; /* Centrare */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Stiluri pentru fiecare afecțiune */
+        .arsuri { background-color: #f44336; } /* Roșu */
+        .escar { background-color: #4caf50; } /* Verde */
+        .dermatita { background-color: #2196f3; } /* Albastru */
+        .psoriazis { background-color: #ff9800; } /* Portocaliu */
+        .urticarie { background-color: #9c27b0; } /* Violet */
+        .infectii_cut { background-color: #009688; } /* Teal */
+        .acnee { background-color: #ffeb3b; color: black; } /* Galben */
+        .micoze { background-color: #3f51b5; } /* Albastru închis */
+        .herpes { background-color: #c2185b; } /* Roșu închis */
+        .lupus { background-color: #673ab7; } /* Violet închis */
+
+        /* Stil pentru butonul Înapoi */
+        .buton_inapoi {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
 <body>
 
-    <h1>Plan de Îngrijire - Inflamație Cutanată</h1>
+    <h1>Afecțiuni ale Sistemului Tegumentar</h1>
 
-    <h2>Problema:</h2>
-    <p>Inflamație cutanată</p>
-
-    <h2>Etiologie:</h2>
-    <p>Infecție bacteriană, fungică sau virală</p>
-
-    <h2>Simptom:</h2>
-    <p>Eritem localizat</p>
-
-    <h2>Obiectiv de îngrijire:</h2>
-    <p>Pacientul să prezinte reducerea inflamației cutanate și vindecarea leziunilor.</p>
-
-    <h2>Intervenții:</h2>
-
-    <div class="interventions">
-        <h3>Rol propriu:</h3>
-        <ul>
-            <li>Educa pacientul privind igiena corespunzătoare a zonei afectate.</li>
-            <li>Monitorizez evoluția leziunilor cutanate și prezența semnelor de extindere a infecției.</li>
-            <li>Recomand evitarea traumatizării zonei afectate și folosirea hainelor din materiale naturale.</li>
-        </ul>
-
-        <h3>Rol delegat:</h3>
-        <ul>
-            <li>Aplic tratament local antiseptic sau antibiotic conform prescripției medicale.</li>
-            <li>Administrez antibiotice orale sau antifungice conform indicațiilor medicului.</li>
-        </ul>
+    <div class="button-container">
+        <button class="arsuri" onclick="window.location.href='arsuri.html'">Arsuri</button>
+        <button class="escar" onclick="window.location.href='escare.html'">Escare de decubit</button>
+        <button class="dermatita" onclick="window.location.href='dermatita_atopica.html'">Dermatita atopică</button>
+        <button class="psoriazis" onclick="window.location.href='psoriazis.html'">Psoriazis</button>
+        <button class="urticarie" onclick="window.location.href='urticarie.html'">Urticarie</button>
+        <button class="infectii_cut" onclick="window.location.href='infectii_cutane.html'">Infecții cutanate (impetigo, celulită, erizipel)</button>
+        <button class="acnee" onclick="window.location.href='acnee.html'">Acnee severă</button>
+        <button class="micoze" onclick="window.location.href='micoze.html'">Micoze cutanate</button>
+        <button class="herpes" onclick="window.location.href='herpes_zoster.html'">Herpes zoster</button>
+        <button class="lupus" onclick="window.location.href='lupus.html'">Lupus eritematos sistemic (manifestări cutanate)</button>
     </div>
 
-    <div class="evaluation">
-        <h2>Evaluarea intervențiilor:</h2>
-        <ul>
-            <li>În urma tratamentului, pacientul prezintă reducerea eritemului.</li>
-            <li>Pacientul nu mai prezintă semne de extindere a infecției.</li>
-            <li>Pacientul respectă măsurile de igienă și tratamentul prescris.</li>
-        </ul>
-    </div>
-
-    <button onclick="window.location.href='page2.html'">Înapoi</button>
+    <button class="buton_inapoi" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
