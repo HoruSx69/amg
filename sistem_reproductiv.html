@@ -18,19 +18,10 @@
         h2 {
             color: #2980b9;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd; /* Culoare medicală deschisă */
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb; /* Bordură albastră deschisă */
+        .button-container {
+            margin-bottom: 20px;
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -38,12 +29,31 @@
             cursor: pointer;
             font-size: 16px;
             display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px auto; /* Centrare */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
-        }
+        /* Stiluri pentru fiecare afecțiune */
+        .endometrioza { background-color: #ff5722; } /* Portocaliu */
+        .sopc { background-color: #8e24aa; } /* Violet */
+        .bip { background-color: #3f51b5; } /* Albastru */
+        .fibrom { background-color: #009688; } /* Teal */
+        .cancer_col { background-color: #f44336; } /* Roșu */
+        .cancer_ovarian { background-color: #c2185b; } /* Roșu închis */
+        .menopauza_preeoce { background-color: #ffb300; } /* Galben */
+        .infectii_vaginale { background-color: #7b1fa2; } /* Purpuriu închis */
+        .disfunctii_menstruale { background-color: #03a9f4; } /* Albastru deschis */
+        .prolaps { background-color: #ff7043; } /* Portocaliu deschis */
+
+        .prostatita { background-color: #3e2723; } /* Maro închis */
+        .hbp { background-color: #388e3c; } /* Verde închis */
+        .cancer_prostata { background-color: #f57c00; } /* Portocaliu închis */
+        .orchita { background-color: #1976d2; } /* Albastru cu ton închis */
+        .epididimita { background-color: #d32f2f; } /* Roșu cu ton închis */
+        .disfunctie_erectila { background-color: #0288d1; } /* Albastru vibrant */
+        .varicocel { background-color: #388e3c; } /* Verde */
+        .torsione_testiculara { background-color: #7b1fa2; } /* Purpuriu */
+        .infertilitate_masculina { background-color: #c2185b; } /* Roșu închis */
+        .bts { background-color: #8e24aa; } /* Violet închis */
     </style>
 </head>
 <body>
@@ -51,32 +61,32 @@
     <h1>Afecțiuni ale Sistemului Reproductiv</h1>
 
     <h2>La femei:</h2>
-    <ul>
-        <li>Endometrioză</li>
-        <li>Sindromul ovarelor polichistice (SOPC)</li>
-        <li>Boala inflamatorie pelvină (BIP)</li>
-        <li>Fibrom uterin</li>
-        <li>Cancer de col uterin</li>
-        <li>Cancer ovarian</li>
-        <li>Menopauză precoce</li>
-        <li>Infecții vaginale (candidoză, vaginoză bacteriană)</li>
-        <li>Disfuncții menstruale (amenoree, dismenoree)</li>
-        <li>Prolaps uterin</li>
-    </ul>
+    <div class="button-container">
+        <button class="endometrioza" onclick="window.location.href='endometrioza.html'">Endometrioză</button>
+        <button class="sopc" onclick="window.location.href='sop.html'">Sindromul ovarelor polichistice (SOPC)</button>
+        <button class="bip" onclick="window.location.href='bip.html'">Boala inflamatorie pelvină (BIP)</button>
+        <button class="fibrom" onclick="window.location.href='fibrom.html'">Fibrom uterin</button>
+        <button class="cancer_col" onclick="window.location.href='cancer_col.html'">Cancer de col uterin</button>
+        <button class="cancer_ovarian" onclick="window.location.href='cancer_ovarian.html'">Cancer ovarian</button>
+        <button class="menopauza_preeoce" onclick="window.location.href='menopauza_preeoce.html'">Menopauză precoce</button>
+        <button class="infectii_vaginale" onclick="window.location.href='infectii_vaginale.html'">Infecții vaginale (candidoză, vaginoză bacteriană)</button>
+        <button class="disfunctii_menstruale" onclick="window.location.href='disfunctii_menstruale.html'">Disfuncții menstruale (amenoree, dismenoree)</button>
+        <button class="prolaps" onclick="window.location.href='prolaps.html'">Prolaps uterin</button>
+    </div>
 
     <h2>La bărbați:</h2>
-    <ul>
-        <li>Prostatită</li>
-        <li>Hiperplazie benignă de prostată (HBP)</li>
-        <li>Cancer de prostată</li>
-        <li>Orhita</li>
-        <li>Epididimita</li>
-        <li>Disfuncție erectilă</li>
-        <li>Varicocel</li>
-        <li>Torsiune testiculară</li>
-        <li>Infertilitate masculină</li>
-        <li>Boli cu transmitere sexuală (BTS)</li>
-    </ul>
+    <div class="button-container">
+        <button class="prostatita" onclick="window.location.href='prostatita.html'">Prostatită</button>
+        <button class="hbp" onclick="window.location.href='hbp.html'">Hiperplazie benignă de prostată (HBP)</button>
+        <button class="cancer_prostata" onclick="window.location.href='cancer_prostata.html'">Cancer de prostată</button>
+        <button class="orchita" onclick="window.location.href='orchita.html'">Orhita</button>
+        <button class="epididimita" onclick="window.location.href='epididimita.html'">Epididimita</button>
+        <button class="disfunctie_erectila" onclick="window.location.href='disfunctie_erectila.html'">Disfuncție erectilă</button>
+        <button class="varicocel" onclick="window.location.href='varicocel.html'">Varicocel</button>
+        <button class="torsione_testiculara" onclick="window.location.href='torsione_testiculara.html'">Torsiune testiculară</button>
+        <button class="infertilitate_masculina" onclick="window.location.href='infertilitate_masculina.html'">Infertilitate masculină</button>
+        <button class="bts" onclick="window.location.href='bts.html'">Boli cu transmitere sexuală (BTS)</button>
+    </div>
 
     <button onclick="window.location.href='page2.html'">Înapoi</button>
 
