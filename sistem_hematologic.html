@@ -15,31 +15,37 @@
             color: #2c3e50;
             text-align: center;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite butoanelor să se așeze pe mai multe linii */
+            justify-content: center; /* Centrează butoanele pe axa orizontală */
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px; /* Margine între butoane */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Culori pentru fiecare buton */
+        .anemie_feripriva { background-color: #f44336; } /* Roșu */
+        .anemie_megaloblastica { background-color: #3f51b5; } /* Albastru închis */
+        .leucemie { background-color: #4caf50; } /* Verde */
+        .linfom { background-color: #ff9800; } /* Portocaliu */
+        .trombocitopatie { background-color: #9c27b0; } /* Violet */
+        .trombocitopenie { background-color: #ffeb3b; color: black; } /* Galben */
+        .hemofilie { background-color: #00bcd4; } /* Turcoaz */
+        .policitemie { background-color: #795548; } /* Maro */
+        .siclemie { background-color: #ff5722; } /* Roșu închis */
+        .coagulopatii { background-color: #8bc34a; } /* Verde deschis */
+
+        /* Stil pentru butonul Înapoi */
+        .back-button {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
@@ -47,20 +53,20 @@
 
     <h1>Afecțiuni ale Sistemului Hematologic</h1>
 
-    <ul>
-        <li>Anemie feriprivă</li>
-        <li>Anemie megaloblastică</li>
-        <li>Leucemie</li>
-        <li>Linfom</li>
-        <li>Trombocitopatie</li>
-        <li>Trombocitopenie</li>
-        <li>Hemofilie</li>
-        <li>Policitemie</li>
-        <li>Siclemie</li>
-        <li>Coagulopatii (ex. boala von Willebrand)</li>
-    </ul>
+    <div class="button-container">
+        <button class="anemie_feripriva" onclick="window.location.href='anemie_feripiva.html'">Anemie feriprivă</button>
+        <button class="anemie_megaloblastica" onclick="window.location.href='anemie_megaloblastica.html'">Anemie megaloblastică</button>
+        <button class="leucemie" onclick="window.location.href='leucemie.html'">Leucemie</button>
+        <button class="linfom" onclick="window.location.href='linfom.html'">Linfom</button>
+        <button class="trombocitopatie" onclick="window.location.href='trombocitopatie.html'">Trombocitopatie</button>
+        <button class="trombocitopenie" onclick="window.location.href='trombocitopenie.html'">Trombocitopenie</button>
+        <button class="hemofilie" onclick="window.location.href='hemofilie.html'">Hemofilie</button>
+        <button class="policitemie" onclick="window.location.href='policitemie.html'">Policitemie</button>
+        <button class="siclemie" onclick="window.location.href='siclemie.html'">Siclemie</button>
+        <button class="coagulopatii" onclick="window.location.href='coagulopatii.html'">Coagulopatii</button>
+    </div>
 
-    <button onclick="window.location.href='page2.html'">Înapoi</button>
+    <button class="back-button" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
