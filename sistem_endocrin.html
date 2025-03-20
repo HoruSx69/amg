@@ -15,31 +15,37 @@
             color: #2c3e50;
             text-align: center;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite butoanelor să se așeze pe mai multe linii */
+            justify-content: center; /* Centrează butoanele pe axa orizontală */
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px; /* Margine între butoane */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Culori pentru fiecare buton */
+        .diabet { background-color: #f44336; } /* Roșu */
+        .hipotiroidism { background-color: #3f51b5; } /* Albastru închis */
+        .hipertiroidism { background-color: #4caf50; } /* Verde */
+        .cushing { background-color: #ff9800; } /* Portocaliu */
+        .addison { background-color: #9c27b0; } /* Violet */
+        .acromegalie { background-color: #ffeb3b; color: black; } /* Galben */
+        .sopc { background-color: #00bcd4; } /* Turcoaz */
+        .tiroidita { background-color: #795548; } /* Maro */
+        .feocromocitom { background-color: #ff5722; } /* Roșu închis */
+        .hiperparatiroidism { background-color: #8bc34a; } /* Verde deschis */
+
+        /* Stil pentru butonul Înapoi */
+        .back-button {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
@@ -47,20 +53,20 @@
 
     <h1>Afecțiuni ale Sistemului Endocrin</h1>
 
-    <ul>
-        <li>Diabet zaharat tip 1 și 2</li>
-        <li>Hipotiroidism</li>
-        <li>Hipertiroidism</li>
-        <li>Sindromul Cushing</li>
-        <li>Boala Addison</li>
-        <li>Acromegalie</li>
-        <li>Sindromul ovarului polichistic (SOPC)</li>
-        <li>Tiroidită autoimună</li>
-        <li>Feocromocitom</li>
-        <li>Hiperparatiroidism</li>
-    </ul>
+    <div class="button-container">
+        <button class="diabet" onclick="window.location.href='diabet.html'">Diabet zaharat tip 1 și 2</button>
+        <button class="hipotiroidism" onclick="window.location.href='hipotiroidism.html'">Hipotiroidism</button>
+        <button class="hipertiroidism" onclick="window.location.href='hipertiroidism.html'">Hipertiroidism</button>
+        <button class="cushing" onclick="window.location.href='cushing.html'">Sindromul Cushing</button>
+        <button class="addison" onclick="window.location.href='addison.html'">Boala Addison</button>
+        <button class="acromegalie" onclick="window.location.href='acromegalie.html'">Acromegalie</button>
+        <button class="sopc" onclick="window.location.href='sopc.html'">Sindromul ovarului polichistic (SOPC)</button>
+        <button class="tiroidita" onclick="window.location.href='tiroidita.html'">Tiroidită autoimună</button>
+        <button class="feocromocitom" onclick="window.location.href='feocromocitom.html'">Feocromocitom</button>
+        <button class="hiperparatiroidism" onclick="window.location.href='hiperparatiroidism.html'">Hiperparatiroidism</button>
+    </div>
 
-    <button onclick="window.location.href='page2.html'">Înapoi</button>
+    <button class="back-button" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
