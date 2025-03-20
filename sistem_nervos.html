@@ -15,31 +15,37 @@
             color: #2c3e50;
             text-align: center;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite butoanelor să se așeze pe mai multe linii */
+            justify-content: center; /* Centrează butoanele pe axa orizontală */
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px; /* Margine între butoane */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Culori pentru fiecare buton */
+        .avc { background-color: #f44336; } /* Roșu */
+        .epilepsie { background-color: #3f51b5; } /* Albastru închis */
+        .parkinson { background-color: #4caf50; } /* Verde */
+        .scleroza { background-color: #ff9800; } /* Portocaliu */
+        .meningita { background-color: #9c27b0; } /* Violet */
+        .alzheimer { background-color: #ffeb3b; color: black; } /* Galben */
+        .neuropatie { background-color: #00bcd4; } /* Turcoaz */
+        .neurom { background-color: #795548; } /* Maro */
+        .cefalee { background-color: #ff5722; } /* Roșu închis */
+        .tulburari_somn { background-color: #8bc34a; } /* Verde deschis */
+
+        /* Stil pentru butonul Înapoi */
+        .back-button {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
@@ -47,20 +53,20 @@
 
     <h1>Afecțiuni ale Sistemului Nervos</h1>
 
-    <ul>
-        <li>Accident vascular cerebral (AVC)</li>
-        <li>Epilepsie</li>
-        <li>Boala Parkinson</li>
-        <li>Scleroză multiplă</li>
-        <li>Meningită</li>
-        <li>Alzheimer</li>
-        <li>Neuropatie periferică</li>
-        <li>Neurom muscular</li>
-        <li>Cefalee (migrene, cefalee tensională)</li>
-        <li>Tulburări de somn (insomnie, apnee de somn)</li>
-    </ul>
+    <div class="button-container">
+        <button class="avc" onclick="window.location.href='avc.html'">Accident vascular cerebral (AVC)</button>
+        <button class="epilepsie" onclick="window.location.href='epilepsie.html'">Epilepsie</button>
+        <button class="parkinson" onclick="window.location.href='parkinson.html'">Boala Parkinson</button>
+        <button class="scleroza" onclick="window.location.href='scleroza.html'">Scleroză multiplă</button>
+        <button class="meningita" onclick="window.location.href='meningita.html'">Meningită</button>
+        <button class="alzheimer" onclick="window.location.href='alzheimer.html'">Alzheimer</button>
+        <button class="neuropatie" onclick="window.location.href='neuropatie.html'">Neuropatie periferică</button>
+        <button class="neurom" onclick="window.location.href='neurom.html'">Neurom muscular</button>
+        <button class="cefalee" onclick="window.location.href='cefalee.html'">Cefalee (migrene, cefalee tensională)</button>
+        <button class="tulburari_somn" onclick="window.location.href='tulburari_somn.html'">Tulburări de somn</button>
+    </div>
 
-    <button onclick="window.location.href='page2.html'">Înapoi</button>
+    <button class="back-button" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
