@@ -3,140 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Îngrijire pentru Sistemul Cardiovascular</title>
+    <title>Afecțiuni ale Sistemului Cardiovascular</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            padding: 20px;
-            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f7fa;
             color: #333;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            padding: 25px;
-            transition: all 0.3s ease;
-        }
-        .container:hover {
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-        }
         h1 {
+            color: #2c3e50;
             text-align: center;
-            color: #dc3545;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #343a40;
-            border-bottom: 3px solid #dc3545;
-            padding-bottom: 10px;
-            font-size: 1.8em;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite butoanelor să se așeze pe mai multe linii */
+            justify-content: center; /* Centrează butoanele pe axa orizontală */
         }
-        .section {
-            margin-bottom: 20px;
-            background-color: #e2e6ea;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .interventions {
-            background-color: #cce5ff;
-            padding: 10px;
-            border-left: 5px solid #0056b3;
-            font-weight: bold;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
-            color: #777;
-        }
-        .back-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 12px;
-            text-align: center;
-            background-color: #28a745;
-            color: #ffffff;
+        button {
+            color: white;
             border: none;
+            padding: 10px 20px;
             border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px; /* Margine între butoane */
             transition: background-color 0.3s;
         }
-        .back-button:hover {
-            background-color: #218838;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-            font-size: 1.1em;
+        /* Culori pentru fiecare buton */
+        .hipertensiune { background-color: #f44336; } /* Roșu */
+        .insuficienta { background-color: #3f51b5; } /* Albastru închis */
+        .aritmii { background-color: #4caf50; } /* Verde */
+        .infarct { background-color: #ff9800; } /* Portocaliu */
+        .boala_coronara { background-color: #9c27b0; } /* Violet */
+        .insuficienta_valvulara { background-color: #ffeb3b; color: black; } /* Galben */
+        .cardiomiopatie { background-color: #00bcd4; } /* Turcoaz */
+        .anevrism { background-color: #795548; } /* Maro */
+        .tromboza { background-color: #ff5722; } /* Roșu închis */
+        .embolie { background-color: #8bc34a; } /* Verde deschis */
+
+        /* Stil pentru butonul Înapoi */
+        .back-button {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Plan de Îngrijire pentru Sistemul Cardiovascular</h1>
+    <h1>Afecțiuni ale Sistemului Cardiovascular</h1>
 
-    <div class="section">
-        <h2>Problema</h2>
-        <p><strong>Scăderea fluxului sanguin</strong></p>
+    <div class="button-container">
+        <button class="hipertensiune" onclick="window.location.href='hipertensiune.html'">Hipertensiune arterială</button>
+        <button class="insuficienta" onclick="window.location.href='insuficienta.html'">Insuficiență cardiacă</button>
+        <button class="aritmii" onclick="window.location.href='aritmii.html'">Aritmii cardiace</button>
+        <button class="infarct" onclick="window.location.href='infarct.html'">Infarct miocardic acut</button>
+        <button class="boala_coronara" onclick="window.location.href='boala_coronara.html'">Boala arterială coronariană</button>
+        <button class="insuficienta_valvulara" onclick="window.location.href='insuficienta_valvulara.html'">Insuficiență valvulară</button>
+        <button class="cardiomiopatie" onclick="window.location.href='cardiomiopatie.html'">Cardiomiopatie</button>
+        <button class="anevrism" onclick="window.location.href='anevrism.html'">Aneurism aortic</button>
+        <button class="tromboza" onclick="window.location.href='tromboza.html'">Tromboză venoasă profundă</button>
+        <button class="embolie" onclick="window.location.href='embolie.html'">Embolie pulmonară</button>
     </div>
 
-    <div class="section">
-        <h2>Etiologie</h2>
-        <p><strong>Cauzată de afecțiuni precum hipertensiunea, ateroscleroza, insuficiența cardiacă sau infarctul miocardic</strong></p>
-    </div>
-
-    <div class="section">
-        <h2>Simptom</h2>
-        <p>Manifestată prin <strong>durere toracică</strong>, <strong>oboseală</strong> și <strong>dificultăți de respirație</strong>.</p>
-    </div>
-
-    <div class="section">
-        <h2>Obiectiv de Îngrijire</h2>
-        <p>Pacientul să prezinte <strong>îmbunătățirea circulației sanguine</strong> și <strong>reducerea simptomelor</strong> asociate cu afecțiunile cardiovasculare.</p>
-    </div>
-
-    <div class="section interventions">
-        <h2>Intervenții</h2>
-
-        <h3>Rol propriu:</h3>
-        <ul>
-            <li><strong>Educația pacientului</strong> despre adoptarea unui stil de viață sănătos (dietă echilibrată, activitate fizică regulată, renunțarea la fumat).</li>
-            <li><strong>Încurajarea pacientului</strong> să monitorizeze tensiunea arterială și să urmeze recomandările medicului pentru managementul factorilor de risc.</li>
-            <li><strong>Monitorizarea</strong> semnelor de insuficiență cardiacă sau ischemie miocardică (umflături la nivelul picioarelor, dificultăți respiratorii).</li>
-        </ul>
-
-        <h3>Rol delegat:</h3>
-        <ul>
-            <li><strong>Administrarea de medicamente</strong> antihipertensive, anticoagulante sau medicamente pentru insuficiența cardiacă conform prescripției medicului.</li>
-            <li><strong>Monitorizarea ECG-ului</strong>, a funcției renale și a altor parametri cardiovasculari conform recomandărilor medicului.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Evaluarea Intervențiilor</h2>
-        <p>Pacientul să prezinte <strong>o tensiune arterială controlată</strong> și <strong>o circulație sanguină îmbunătățită</strong>.</p>
-        <p>Pacientul să nu prezinte <strong>dureri toracice</strong> sau <strong>dificultăți respiratorii severe</strong>.</p>
-        <p>Pacientul să <strong>adhere la tratamentele prescrise</strong> și să <strong>îmbunătățească stilul de viață</strong>.</p>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Vasile Alecsandri Focșani</p>
-    </div>
-
-    <a href="page2.html" class="back-button">Înapoi</a>
-</div>
+    <button class="back-button" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
