@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Îngrijire - Dispnee Severă</title>
+    <title>Afecțiuni ale Sistemului Respirator</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,38 +15,10 @@
             color: #2c3e50;
             text-align: center;
         }
-        h2 {
-            color: #2980b9;
-        }
-        h3 {
-            color: #c0392b;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd; /* Culoare medicală deschisă */
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb; /* Bordură albastră deschisă */
-        }
-        .interventions {
-            background-color: #d5dbdb;
-            border-radius: 10px;
-            padding: 15px;
+        .button-container {
             margin-bottom: 20px;
-            border: 1px solid #ccc;
-        }
-        .evaluation {
-            background-color: #c8e6c9; /* Verde deschis pentru evaluare */
-            border-radius: 10px;
-            padding: 15px;
-            border: 1px solid #a5d6a7; /* Bordură verde */
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -54,57 +26,45 @@
             cursor: pointer;
             font-size: 16px;
             display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px auto; /* Centrare */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Stiluri pentru fiecare afecțiune */
+        .pneumonie { background-color: #f44336; } /* Roșu */
+        .bocp { background-color: #ff9800; } /* Portocaliu */
+        .astm { background-color: #4caf50; } /* Verde */
+        .tuberculoza { background-color: #2196f3; } /* Albastru */
+        .emfizem { background-color: #9c27b0; } /* Violet */
+        .edem { background-color: #03a9f4; } /* Albastru deschis */
+        .bronsita { background-color: #ffeb3b; color: black; } /* Galben */
+        .embolie { background-color: #3f51b5; } /* Albastru închis */
+        .abces { background-color: #c2185b; } /* Roșu închis */
+        .ards { background-color: #673ab7; } /* Violet închis */
+
+        /* Stil pentru butonul Înapoi */
+        .buton_inapoi {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
 <body>
 
-    <h1>Plan de Îngrijire - Dispnee Severă</h1>
+    <h1>Afecțiuni ale Sistemului Respirator</h1>
 
-    <h2>Problema:</h2>
-    <p>Dispnee severă</p>
-
-    <h2>Etiologie:</h2>
-    <p>Obstrucție arterială pulmonară prin tromb embolizat</p>
-
-    <h2>Simptom:</h2>
-    <p>Dificultăți respiratorii acute</p>
-
-    <h2>Obiectiv de îngrijire:</h2>
-    <p>Pacientul să prezinte ameliorarea respirației și stabilizarea funcției pulmonare.</p>
-
-    <h2>Intervenții:</h2>
-
-    <div class="interventions">
-        <h3>Rol propriu:</h3>
-        <ul>
-            <li>Monitorizez frecvența respiratorie și saturația de oxigen.</li>
-            <li>Educ pacientul privind importanța repausului la pat și evitarea efortului fizic.</li>
-            <li>Asigur poziționarea pacientului în poziție semi-Fowler pentru a facilita respirația.</li>
-        </ul>
-
-        <h3>Rol delegat:</h3>
-        <ul>
-            <li>Administrez oxigenoterapie conform indicațiilor medicale.</li>
-            <li>Administrez anticoagulante și trombolitice conform prescripției medicului.</li>
-        </ul>
+    <div class="button-container">
+        <button class="pneumonie" onclick="window.location.href='pneumonie.html'">Pneumonie</button>
+        <button class="bocp" onclick="window.location.href='bopc.html'">Bronhopneumopatie obstructivă cronică (BPOC)</button>
+        <button class="astm" onclick="window.location.href='astm.html'">Astm bronșic</button>
+        <button class="tuberculoza" onclick="window.location.href='tuberculoza.html'">Tuberculoză pulmonară</button>
+        <button class="emfizem" onclick="window.location.href='emfizem.html'">Emfizem pulmonar</button>
+        <button class="edem" onclick="window.location.href='edem_pulmonar_acut.html'">Edem pulmonar acut</button>
+        <button class="bronsita" onclick="window.location.href='bronsita_acuta_cronica.html'">Bronșită acută/cronică</button>
+        <button class="embolie" onclick="window.location.href='embolie_pulmonara.html'">Embolie pulmonară</button>
+        <button class="abces" onclick="window.location.href='abces_pulmonar.html'">Abces pulmonar</button>
+        <button class="ards" onclick="window.location.href='ards.html'">Sindrom de detresă respiratorie acută (ARDS)</button>
     </div>
 
-    <div class="evaluation">
-        <h2>Evaluarea intervențiilor:</h2>
-        <ul>
-            <li>În urma tratamentului, pacientul prezintă reducerea dispneei.</li>
-            <li>Pacientul nu mai prezintă semne de hipoxie severă.</li>
-            <li>Pacientul respectă tratamentul anticoagulant și indicațiile de prevenție.</li>
-        </ul>
-    </div>
-
-    <button onclick="window.location.href='page2.html'">Înapoi</button>
+    <button class="buton_inapoi" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
