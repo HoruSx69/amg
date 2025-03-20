@@ -15,34 +15,37 @@
             color: #2c3e50;
             text-align: center;
         }
-        h2 {
-            color: #2980b9;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            background-color: #e3f2fd;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #bbdefb;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite butoanelor să se așeze pe mai multe linii */
+            justify-content: center; /* Centrează butoanele pe axa orizontală */
         }
         button {
-            background-color: #007bff;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            display: block;
-            margin: 20px auto; /* Centrare */
+            margin: 10px; /* Margine între butoane */
             transition: background-color 0.3s;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Culori pentru fiecare buton */
+        .osteoporoza { background-color: #f44336; } /* Roșu */
+        .artrita { background-color: #ff9800; } /* Portocaliu */
+        .osteoartrita { background-color: #4caf50; } /* Verde */
+        .lombosciatica { background-color: #2196f3; } /* Albastru */
+        .fracturi { background-color: #9c27b0; } /* Violet */
+        .gonartroza { background-color: #3f51b5; } /* Albastru închis */
+        .spondiloza { background-color: #ffeb3b; color: black; } /* Galben */
+        .fibromialgie { background-color: #00bcd4; } /* Turcoaz */
+        .gota { background-color: #ff5722; } /* Roșu închis */
+        .bursita { background-color: #8bc34a; } /* Verde deschis */
+
+        /* Stil pentru butonul Înapoi */
+        .back-button {
+            background-color: #f44336; /* Roșu */
         }
     </style>
 </head>
@@ -50,20 +53,20 @@
 
     <h1>Afecțiuni ale Sistemului Osteoarticular</h1>
 
-    <ul>
-        <li>Osteoporoză</li>
-        <li>Artrită reumatoidă</li>
-        <li>Osteoartrita</li>
-        <li>Lombosciatică</li>
-        <li>Fracturi</li>
-        <li>Gonartroză</li>
-        <li>Spondiloză cervicală/lombară</li>
-        <li>Fibromialgie</li>
-        <li>Guta</li>
-        <li>Bursită</li>
-    </ul>
+    <div class="button-container">
+        <button class="osteoporoza" onclick="window.location.href='osteoporoza.html'">Osteoporoză</button>
+        <button class="artrita" onclick="window.location.href='artrita_reumatoidă.html'">Artrită reumatoidă</button>
+        <button class="osteoartrita" onclick="window.location.href='osteoartrita.html'">Osteoartrita</button>
+        <button class="lombosciatica" onclick="window.location.href='lombosciatica.html'">Lombosciatică</button>
+        <button class="fracturi" onclick="window.location.href='fracturi.html'">Fracturi</button>
+        <button class="gonartroza" onclick="window.location.href='gonartroza.html'">Gonartroză</button>
+        <button class="spondiloza" onclick="window.location.href='spondiloza.html'">Spondiloză cervicală/lombară</button>
+        <button class="fibromialgie" onclick="window.location.href='fibromialgie.html'">Fibromialgie</button>
+        <button class="gota" onclick="window.location.href='gota.html'">Guta</button>
+        <button class="bursita" onclick="window.location.href='bursita.html'">Bursită</button>
+    </div>
 
-    <button onclick="window.location.href='page2.html'">Înapoi</button>
+    <button class="back-button" onclick="window.location.href='page2.html'">Înapoi</button>
 
 </body>
 </html>
