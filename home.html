@@ -17,6 +17,7 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+            animation: fadeIn 1s ease-in;
         }
         header h1 {
             margin: 0;
@@ -29,14 +30,23 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease-in-out;
         }
         h2 {
             color: #28a745;
             margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+            animation-delay: 0.5s; /* Delay for h2 */
         }
         p {
             line-height: 1.6;
             color: #555;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        p:nth-child(n+5) {
+            animation-delay: 1s; /* Delay for subsequent paragraphs */
         }
         .button-container {
             margin-top: 30px;
@@ -49,25 +59,37 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 10px; /* Adding space between buttons */
+            animation: grow 0.5s ease-in-out; /* Initial animation for the buttons */
         }
         .continue-button {
             background-color: #28a745; /* Green */
         }
         .continue-button:hover {
             background-color: #218838;
+            transform: scale(1.05) rotate(2deg);
         }
         .care-plan-button {
             background-color: #dc3545; /* Red */
         }
         .care-plan-button:hover {
             background-color: #c82333;
+            transform: scale(1.05) rotate(-2deg);
         }
         .diagnostic-button {
             background-color: #007bff; /* Blue */
         }
         .diagnostic-button:hover {
             background-color: #0056b3;
+            transform: scale(1.05) rotate(2deg);
+        }
+        .license-button {
+            background-color: #ffc107; /* Yellow */
+        }
+        .license-button:hover {
+            background-color: #e0a800;
+            transform: scale(1.05) rotate(-2deg);
         }
         footer {
             text-align: center;
@@ -83,6 +105,20 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes grow {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
         }
     </style>
 </head>
@@ -117,9 +153,9 @@
     </p>
     
     <div class="button-container">
-        
         <a href="page2.html" class="button care-plan-button">Planuri de Îngrijire</a>
         <a href="diagnostic_nursing.html" class="button diagnostic-button">Diagnostice Nursing</a>
+        <a href="licenses.html" class="button license-button">Licențe</a>
     </div>
 </div>
 
